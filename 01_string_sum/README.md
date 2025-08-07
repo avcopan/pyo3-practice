@@ -19,3 +19,15 @@ If you added the `extension-module` configuration to your `Cargo.toml` above, yo
 ```
 cargo test
 ```
+
+## VS Code settings
+
+To get `rust-analyzer` working, I had to set the following workspace settings in `.vscode/settings.json`:
+```
+{
+    "rust-analyzer.cargo.sysroot": "<find via the command `pixi run rustc --print sysroot`>",
+    "rust-analyzer.cargo.extraEnv": {
+        "PYO3_PYTHON": "<find via the command `pixi run which python`>"
+    }
+}
+```
