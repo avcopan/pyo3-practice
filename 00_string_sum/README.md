@@ -1,4 +1,4 @@
-# pyo3-practice
+# Built using globally installed tools
 
 Following along with [PyO3 tutorial](https://pyo3.rs/v0.25.1/).
 
